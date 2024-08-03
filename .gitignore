@@ -1,0 +1,45 @@
+# WordPress Core
+wp-config.php
+wp-content/plugins/
+wp-content/uploads/
+wp-content/upgrade/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Log files
+*.log
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Sass/CSS
+.sass-cache/
+*.css.map
+
+# Build directories
+dist/
+build/
+tmp/
+
+# Composer dependencies
+vendor/
+
+# Minified files
+*.min.js
+*.min.css
+
+# Miscellaneous
+*.swp
+*~
+.project
+.settings
