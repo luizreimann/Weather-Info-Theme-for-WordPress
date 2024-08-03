@@ -37,6 +37,9 @@ Este é um tema WordPress personalizado que integra informações climáticas ut
 5. **Ative o tema e o plugin:**
    - No WordPress Admin, vá para **Aparência > Temas** e ative o tema **Weather Info Theme**.
    - Vá para **Plugins > Adicionar Novo > Fazer Upload de Plugin** e faça o upload do plugin **Weather Info for WordPress**. Em seguida, ative-o.
+  
+6. **Utilize os modelos de página:**
+   - No WordPress Admin, vá para **Páginas > Adicionar nova página** e crie uma página utilizando o modelo **Weather Page** e outra utilizando **Profile Page**.
 
 6. **Configure a API Key:**
    - No WordPress Admin, vá para **Weather Info**.
