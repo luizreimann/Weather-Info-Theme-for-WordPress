@@ -9,7 +9,7 @@ Este é um tema WordPress personalizado que integra informações climáticas ut
 - Node.js
 - npm ou Yarn
 - API Key do OpenWeatherMap
-- Plugin [Weather-Info-Theme-for-WordPress](https://github.com/luizreimann/Weather-Info-Theme-for-WordPress)
+- Plugin [Weather-Info-for-WordPress](https://github.com/luizreimann/Weather-Info-for-WordPress)
 
 ## Instalação
 
