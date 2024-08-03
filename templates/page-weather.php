@@ -11,13 +11,30 @@ get_header();
 $current_user = wp_get_current_user();
 $user_id = $current_user->ID;
 
+// Verificar preenchimento do endereço
+$address = get_user_meta( $user_id, 'address', true );
+if ( empty( $address )){
+    ?>
+        <div class="alert alert-danger">
+            <span>Endereço não cadastrado. Por favor, atualize seu perfil.</span>
+        </div>
+    <?php
+    get_footer();
+    exit;
+}
+
 // Obter latitude e longitude
 $latitude = get_user_meta( $user_id, 'latitude', true );
 $longitude = get_user_meta( $user_id, 'longitude', true );
 
 // Verificar latitude e longitude
 if ( empty( $latitude ) || empty( $longitude ) ) {
-    echo '<p>Latitude e longitude não cadastradas. Por favor, atualize seu perfil.</p>';
+    ?>
+        <div class="alert alert-danger">
+            <p>Latitude e longitude não cadastradas. Por favor, atualize seu perfil.</p>
+            <span>Precisa de ajuda? <a href="https://support.google.com/maps/answer/18539">Clique aqui.</a></span>
+        </div>
+    <?php
     get_footer();
     exit;
 }
