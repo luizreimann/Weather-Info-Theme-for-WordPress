@@ -11867,4 +11867,8 @@ main {
   min-height: 80vh;
 }
 
+.weather-icon {
+  width: 100px;
+}
+
 /*# sourceMappingURL=style.css.map */

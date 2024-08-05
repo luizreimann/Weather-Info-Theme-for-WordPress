@@ -88,8 +88,14 @@ if ( is_user_logged_in() ) {
             <label for="state">Estado</label>
             <input type="text" class="form-control" id="state" name="state" value="<?php echo esc_attr( get_user_meta( $user_id, 'state', true ) ); ?>" required>
         </div>
-        <input type="hidden" name="latitude" id="latitude" value="<?php echo esc_attr( get_user_meta( $user_id, 'latitude', true ) ); ?>">
-        <input type="hidden" name="longitude" id="longitude" value="<?php echo esc_attr( get_user_meta( $user_id, 'longitude', true ) ); ?>">
+        <div class="form-group d-none" id="latitude-field">
+            <label for="latitude">Latitude</label>
+            <input type="hidden" class="form-control" name="latitude" id="latitude" value="<?php echo esc_attr( get_user_meta( $user_id, 'latitude', true ) ); ?>">
+        </div>
+        <div class="form-group d-none" id="longitude-field">
+            <label for="longitude">Longitude</label>
+            <input type="hidden" class="form-control" name="longitude" id="longitude" value="<?php echo esc_attr( get_user_meta( $user_id, 'longitude', true ) ); ?>">
+        </div>
         <input type="hidden" name="action" value="update">
         <button type="submit" class="mt-5 btn btn-primary btn-lg w-100 text-white">Salvar</button>
     </form>
@@ -240,8 +246,14 @@ if ( is_user_logged_in() ) {
                     <label for="state">Estado</label>
                     <input type="text" class="form-control" id="state" name="state" required>
                 </div>
-                <input type="hidden" name="latitude" id="latitude">
-                <input type="hidden" name="longitude" id="longitude">
+                <div class="form-group d-none" id="latitude-field">
+                    <label for="latitude">Latitude</label>
+                    <input type="hidden" class="form-control" name="latitude" id="latitude" value="<?php echo esc_attr( get_user_meta( $user_id, 'latitude', true ) ); ?>">
+                </div>
+                <div class="form-group d-none" id="longitude-field">
+                    <label for="longitude">Longitude</label>
+                    <input type="hidden" class="form-control" name="longitude" id="longitude" value="<?php echo esc_attr( get_user_meta( $user_id, 'longitude', true ) ); ?>">
+                </div>
                 <input type="hidden" name="action" value="register">
                 <button type="submit" class="mt-5 btn btn-secondary btn-lg w-100 text-white">Registrar</button>
             </form>
